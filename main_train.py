@@ -31,6 +31,7 @@ for iDataSet in range(nDataSet):
         os.makedirs(heatmap_dir)
     logger = Logger(cp_dir, local_rank=args.local_rank, log_fn=args.log_fn)
     logger.log(args)
+<<<<<<< HEAD
     if args.dataset_name == 'houston':
         data_path_s = '/root/data/Projects/DA_240515/data/Houston/Houston13.mat'
         label_path_s = '/root/data/Projects/DA_240515/data/Houston/Houston13_7gt.mat'
@@ -53,6 +54,15 @@ for iDataSet in range(nDataSet):
         data_s, label_s = utils.load_data_pavia(data_path_s, label_path_s)
         data_t, label_t = utils.load_data_pavia(data_path_t, label_path_t)
 
+=======
+    data_path_s = '/root/data/Projects/DA_240515/data/Houston/Houston13.mat'
+    label_path_s = '/root/data/Projects/DA_240515/data/Houston/Houston13_7gt.mat'
+    data_path_t = '/root/data/Projects/DA_240515/data/Houston/Houston18.mat'
+    label_path_t = '/root/data/Projects/DA_240515/data/Houston/Houston18_7gt.mat'
+
+    data_s, label_s = utils.load_data_houston(data_path_s, label_path_s)
+    data_t, label_t = utils.load_data_houston(data_path_t, label_path_t)
+>>>>>>> 0c47779a53348f10cc223db0d97e06fe99582c50
     print('#######################idataset######################## ', iDataSet, 'seed', seeds[iDataSet])
     utils.seed_everything(seeds[iDataSet], use_deterministic=True)
     g_train.manual_seed(seeds[iDataSet])
@@ -234,12 +244,17 @@ for i in range(best_G.shape[0]):
 predict_hmp_dir = os.path.join(heatmap_dir, 'predict_map')
 if not os.path.exists(predict_hmp_dir):
     os.makedirs(predict_hmp_dir)
+<<<<<<< HEAD
 if args.dataset_name == 'houston':
     classification_map(hsi_pic[2:-2, 2:-2, :], best_G[2:-2, 2:-2], 24, os.path.join(predict_hmp_dir, 'houston.png'))
 elif args.dataset_name == 'pavia':
     classification_map(hsi_pic[2:-2, 2:-2, :], best_G[2:-2, 2:-2], 24, os.path.join(predict_hmp_dir, 'pavia.png'))
 elif args.dataset_name == 'hyrank':
    classification_map(hsi_pic[2:-2, 2:-2, :], best_G[2:-2, 2:-2], 24, os.path.join(predict_hmp_dir, 'hyrank.png'))
+=======
+classification_map(hsi_pic[2:-2, 2:-2, :], best_G[2:-2, 2:-2], 24, os.path.join(predict_hmp_dir, 'houston.png'))
+#
+>>>>>>> 0c47779a53348f10cc223db0d97e06fe99582c50
 
 
 

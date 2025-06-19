@@ -31,7 +31,11 @@ Our pretrained model weight files can be downloaded from https://pan.baidu.com/s
 # Training using Houston dataset with default params
 # Change the directory to the lasdt folder.
 cd /root/data/Projects/lasdt
+<<<<<<< HEAD
 ./run_houston_train.sh
+=======
+./run_train.sh
+>>>>>>> 0c47779a53348f10cc223db0d97e06fe99582c50
 
 # Testing using Houston dataset with default params
 ./run_eval.sh

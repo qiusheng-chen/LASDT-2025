@@ -15,6 +15,7 @@ if args.dataset_name == 'houston':
     num_classes = 7
     N_BANDS = 48
     seeds = [1700, 1764, 2883, 1872, 2153, 2668, 2625, 2738, 2775, 2888]
+<<<<<<< HEAD
 elif args.dataset_name == 'hyrank':
     num_classes = 12
     N_BANDS = 176
@@ -26,6 +27,11 @@ elif args.dataset_name == 'pavia':
 
 
 HalfWidth = args.halfwidth
+=======
+
+HalfWidth = args.halfwidth
+BATCH_SIZE = 32
+>>>>>>> 0c47779a53348f10cc223db0d97e06fe99582c50
 patch_size = 2 * HalfWidth + 1
 nDataSet = len(seeds)
 total_acc = np.zeros([nDataSet, 1])
