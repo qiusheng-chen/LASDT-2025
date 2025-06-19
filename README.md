@@ -20,7 +20,7 @@ matplotlib==3.7.0
 ```
 ## 🗂 Dataset
 You can download the required dataset from https://doi.org/10.6084/m9.figshare.26761831. 
-You can modify the dataset storage directory in lines 34-37 of main_train.py and lines 25-28 of main_eval.py accordingly.
+You can modify the dataset storage directory in lines 35-55 of main_train.py and lines 26-46 of main_eval.py accordingly.
 ## 📝 Pretrain Model
 Our pretrained model weight files can be downloaded from https://pan.baidu.com/s/1PpPGkOpf_QLGuuMNkoowrA?pwd=pisx
 

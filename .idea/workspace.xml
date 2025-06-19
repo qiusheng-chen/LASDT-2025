@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b700134-e99f-44e1-a620-689d175e1194" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/eval.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_eval.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/hsi_transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/hsi_transformer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_eval.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_eval.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_train.sh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +87,7 @@
       <updated>1750230560012</updated>
       <workItem from="1750230561727" duration="8556000" />
       <workItem from="1750255055849" duration="1209000" />
-      <workItem from="1750300547336" duration="937000" />
+      <workItem from="1750300547336" duration="1248000" />
     </task>
     <servers />
   </component>
