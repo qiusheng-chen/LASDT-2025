@@ -14,13 +14,8 @@ parser.add_argument('--no-cuda', action='store_true', default=False,
                     help='disables CUDA training')
 parser.add_argument('--log-interval', type=int, default=5, metavar='N',
                     help='how many batches to wait before logging training status')
-<<<<<<< HEAD
 # parser.add_argument('--seeds', type=int, default=[1700, 1764, 2883, 1872, 2153, 2668, 2625, 2738, 2775, 2888], metavar='K',
 #                     help='seeds for training [1700, 1764, 2883, 1872, 2153, 2668, 2625, 2738, 2775, 2888]')
-=======
-parser.add_argument('--seeds', type=int, default=[1700, 1764, 2883, 1872, 2153, 2668, 2625, 2738, 2775, 2888], metavar='K',
-                    help='seeds for training [1700, 1764, 2883, 1872, 2153, 2668, 2625, 2738, 2775, 2888]')
->>>>>>> 0c47779a53348f10cc223db0d97e06fe99582c50
 parser.add_argument('--gpu', default=0, type=int)
 parser.add_argument('--dataset_name', default='houston', type=str)
 # distributed training

@@ -154,21 +154,13 @@ class Spatial_Transformer(nn.Module):
                       stride=2),
             nn.ReLU(),
         )
-<<<<<<< HEAD
-        ln_dim = ((channels+2-7)//2 +1) * 5
-=======
->>>>>>> 0c47779a53348f10cc223db0d97e06fe99582c50
 
+        ln_dim = ((channels+2-7)//2 +1) * 5
         self.to_patch_embedding = nn.Sequential(
             Rearrange('b n p -> b (n p)'),
             Rearrange('(b c) n -> b c n', c = image_width * image_height),
-<<<<<<< HEAD
             nn.LayerNorm(ln_dim),
             nn.Linear(ln_dim, dim),
-=======
-            nn.LayerNorm(110),
-            nn.Linear(110, dim),
->>>>>>> 0c47779a53348f10cc223db0d97e06fe99582c50
             nn.LayerNorm(dim),
         )
         self.pos_embedding = nn.Parameter(torch.randn(1, num_patches + 1, dim))

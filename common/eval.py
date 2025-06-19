@@ -10,7 +10,6 @@ num_epoch = args.num_epoch
 # num_epoch = 50
 batch_size = args.batch_size
 num_k = args.num_k
-<<<<<<< HEAD
 if args.dataset_name == 'houston':
     num_classes = 7
     N_BANDS = 48
@@ -26,13 +25,6 @@ elif args.dataset_name == 'pavia':
     N_BANDS = 102
     seeds = [1538, 1518, 2046, 2154, 2249, 2351, 2296, 2269, 2268, 2313]
     HalfWidth = 4
-
-
-=======
-num_classes = 7
-N_BANDS = 48
-HalfWidth = args.halfwidth
->>>>>>> 0c47779a53348f10cc223db0d97e06fe99582c50
 BATCH_SIZE = 32
 patch_size = 2 * HalfWidth + 1
 results_dir = os.path.join(grandparent_dir, 'results')

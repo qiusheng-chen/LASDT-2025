@@ -22,7 +22,7 @@ if not os.path.exists(heatmap_dir):
     os.makedirs(heatmap_dir)
 logger = Logger(cp_dir, local_rank=args.local_rank)
 logger.log(args)
-<<<<<<< HEAD
+
 if args.dataset_name == 'houston':
     data_path_s = '/root/data/Projects/DA_240515/data/Houston/Houston13.mat'
     label_path_s = '/root/data/Projects/DA_240515/data/Houston/Houston13_7gt.mat'
@@ -44,15 +44,6 @@ elif args.dataset_name == 'pavia':
     label_path_t = '/root/data/Projects/DA_240515/data/Pavia/pavia_gt_7.mat'
     data_s, label_s = utils.load_data_pavia(data_path_s, label_path_s)
     data_t, label_t = utils.load_data_pavia(data_path_t, label_path_t)
-=======
-data_path_s = '/root/data/Projects/DA_240515/data/Houston/Houston13.mat'
-label_path_s = '/root/data/Projects/DA_240515/data/Houston/Houston13_7gt.mat'
-data_path_t = '/root/data/Projects/DA_240515/data/Houston/Houston18.mat'
-label_path_t = '/root/data/Projects/DA_240515/data/Houston/Houston18_7gt.mat'
-
-data_s, label_s = utils.load_data_houston(data_path_s, label_path_s)
-data_t, label_t = utils.load_data_houston(data_path_t, label_path_t)
->>>>>>> 0c47779a53348f10cc223db0d97e06fe99582c50
 
 trainX, trainY = utils.get_sample_data(data_s, label_s, HalfWidth, 180)
 testID, testX, testY, Gr, RandPerm, Row, Column = utils.get_all_data(data_t, label_t, HalfWidth)

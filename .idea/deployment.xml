@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="rocm" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="rocm (50)" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
     <option name="confirmBeforeUploading" value="false" />
     <serverData>
       <paths name="rocm">
@@ -325,6 +325,16 @@
         <serverdata>
           <mappings>
             <mapping deploy="/root/data/Projects/DA_240515/Final_version/lasdt_main" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/root/data/Projects/DA_240515/Final_version/lasdt_main/checkpoints" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="rocm (51)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
